@@ -1,0 +1,48 @@
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 0.1rem;
+}
+h2 {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.bg-home {
+  min-height: 80vh;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(240, 240, 240, 1) 20%,
+    rgba(255, 255, 255, 1) 40%
+  );
+}
+.page-header-separator {
+  width: 1px;
+  height: 120%;
+  background-color: #55595c;
+}
+.page-header-heading {
+  line-height: 1.5;
+}
+.spinner-border {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  display: block;
+}
+
+.job-description {
+  white-space: pre-wrap;
+}
+.job-card-body {
+  max-height: 50vh;
+  overflow-y: auto;
+}
