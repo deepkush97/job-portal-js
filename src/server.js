@@ -2,6 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const morgan = require("morgan");
+const userRoutes = require("./routes/userRoutes");
 const { errorHandler, notFound } = require("./middlewares/errorMiddleware");
 const app = express();
 if (process.env.NODE_ENV === "development") {
@@ -11,6 +12,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("API is working");
 });
+app.use("/api/users", userRoutes);
 app.use(notFound);
 
 app.use(errorHandler);
